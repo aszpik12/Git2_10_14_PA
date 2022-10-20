@@ -7,6 +7,7 @@ body{
 #container{
     margin: auto;
     width: 800px;
+    margin-bottom: 500px;
 }
 
 .tartalom img{
@@ -16,9 +17,17 @@ body{
  margin-right: auto;
 }
 
+.tartalom{
+    background-color: rgb(58, 56, 56) ;
+}
+
 .resz{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 1px;
+    background-color: red;
+
+
 }
 
 h1{
@@ -52,9 +61,43 @@ a:link{
     color: white;
 }
 
-@media only screen and (max-width: 500px) {
+.kepek{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+#masodik{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+    margin: auto;
+    width: 80%;
+    
+}
+
+
+#szoveg{
+    text-align: left;
+}
+
+#szoveg h1{
+    text-align: left;
+    margin: 15px 0px 5px 0px;
+    border-bottom: 1px solid red;
+}
+
+#kepek img{
+    float: right;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
     body {
-      background-color: rgb(88, 71, 88);
+      background-color: rgb(58, 56, 56);
     }
     .resz{
         display: grid;
@@ -63,10 +106,27 @@ a:link{
     #container{
         margin: auto;
         width: 500px;
+        margin-bottom: 300px;
     }
     #menu li{
         display: grid;
         padding-left: 30px;
         list-style-type: none;
     }
+    #masodik{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 100px;
+        margin: auto;
+        width: 80%;
+        
+    }
+
+    #kepek img{
+        float: right;
+        width: 400px;
+    }
   }
+
+
+
