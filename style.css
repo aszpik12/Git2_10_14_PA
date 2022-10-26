@@ -95,6 +95,44 @@ a:link{
     margin: auto;
 }
 
+.harmadik div{
+    font-size: small;
+    margin: auto;
+    display: block;
+    width: 200px;
+    border-radius: 5%;
+    background-color: green;
+    border: 15px solid green;
+}
+
+.harmadik img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 50px;
+}
+
+.rez{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1px;  
+}
+
+#har{
+text-align: center;
+}
+
+#har h1{
+    border-bottom: 1px solid red;
+    text-align: center;
+    }
+
+#masodik{
+    margin-bottom: 500px;   
+}
+
+
+
 @media only screen and (max-width: 600px) {
     body {
       background-color: rgb(58, 56, 56);
@@ -125,6 +163,10 @@ a:link{
     #kepek img{
         float: right;
         width: 400px;
+    }
+    .rez{
+        display: grid;
+        grid-template-columns: 1fr;
     }
   }
 
